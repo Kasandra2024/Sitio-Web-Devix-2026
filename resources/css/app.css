@@ -1,0 +1,18 @@
+/* Esto crea una zona de clic que está POR ENCIMA del mapa */
+.modal-header {
+    position: relative;
+    z-index: 10050 !important;
+}
+
+/* El botón de cerrar necesita un área de impacto mayor */
+.close {
+    position: absolute !important;
+    right: 15px;
+    top: 10px;
+    z-index: 10060 !important;
+    padding: 10px !important;
+    background: white !important; /* Resalta el botón */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
