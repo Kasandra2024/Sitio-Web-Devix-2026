@@ -1,6 +1,7 @@
 services:
   - type: web
     name: sitio-web-devix
-    runtime: php
-    buildCommand: "composer install --no-dev && npm install && npm run build"
-    startCommand: "php artisan serve --host 0.0.0.0 --port $PORT"
+    env: docker
+    buildCommand: "docker build -t sitio-web-devix ."
+    startCommand: "docker run -p $PORT:80 sitio-web-devix"
+
