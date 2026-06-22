@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: sitio-web-devix
-    env: docker
-    buildCommand: "docker build -t sitio-web-devix ."
-    startCommand: "docker run -p $PORT:80 sitio-web-devix"
-
